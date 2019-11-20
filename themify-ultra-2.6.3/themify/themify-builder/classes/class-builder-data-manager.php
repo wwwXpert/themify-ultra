@@ -400,7 +400,7 @@ class ThemifyBuilder_Data_Manager {
 				<p class="submit"><a href="<?php echo esc_url( add_query_arg( 'do_update_themify_builder_static_content', 'true', admin_url( 'admin.php?page=' . $settings_page ) ) ); ?>" class="tb_static_update_now button-primary"><?php _e( 'Run the updater', 'themify' ); ?></a></p>
 			<?php endif; ?>
 		</div>
-		<script type="text/javascript">
+		<script>
 			jQuery( '.tb_static_update_now' ).on( 'click', function() {
 				return window.confirm( '<?php echo esc_js( __( 'It is strongly recommended that you backup your database before proceeding. Are you sure you wish to run the updater now?', 'themify' ) ); ?>' );
 			});
@@ -640,7 +640,7 @@ class ThemifyBuilder_Data_Manager {
 					), network_admin_url( 'admin.php' ) );
 
 					?><p><?php _e( 'If your browser doesn&#8217;t start loading the next page automatically, click this link:', 'themify' ); ?> <a class="button" href="<?php echo $action_url; ?>"><?php _e('Next Sites', 'themify'); ?></a></p>
-					<script type="text/javascript">
+					<script>
 					<!--
 					function nextpage() {
 						document.location.href = "<?php echo $action_url; ?>";

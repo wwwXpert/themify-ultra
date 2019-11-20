@@ -719,7 +719,7 @@ if( !class_exists( 'Themify_Builder_Layouts' ) ) {
 				)
 			);
 			?>
-            <style type="text/css">
+            <style>
                 .tbuilder-layout-import {
                     display: inline-block;
                     top: 0px;
@@ -753,7 +753,7 @@ if( !class_exists( 'Themify_Builder_Layouts' ) ) {
                     color: #fff;
                 }
             </style>
-            <script type="text/javascript">
+            <script>
 				jQuery( document ).ready( function ( $ ) {
 					$( '.page-title-action' ).after( '<div class="tbuilder-layout-import" style="display:inline-block"><?php echo preg_replace( '~[\r\n\t]+~', '', addslashes( $button ) ); ?></div>' );
 				} );

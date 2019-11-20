@@ -215,9 +215,9 @@ function themify_get_css() {
 			}
 		}
 	} else {
-		$output = '<style type="text/css">/* ' . __('No Values in the Database', 'themify') . ' */</style>';
+		$output = '<style>/* ' . __('No Values in the Database', 'themify') . ' */</style>';
 	}
-	$module_styling_before = "<!-- modules styling -->\n<style type='text/css'>\n";
+	$module_styling_before = "<!-- modules styling -->\n<style>\n";
 	$module_styling_after = "</style>";
 	if( '' != $module_styling ){
 		$output .= $module_styling_before . $module_styling . $module_styling_after;
@@ -838,7 +838,7 @@ add_action( 'after_setup_theme', 'themify_theme_load_skin_functions', 1 );
  */
 function themify_mobile_menu_script() {
 ?>
-<script type="text/javascript">
+<script>
 	function themifyMobileMenuTrigger(e) {
 		var w = document.body.clientWidth;
 		if( w > 0 && w <= tf_mobile_menu_trigger_point ) {

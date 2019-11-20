@@ -111,7 +111,7 @@ class Themify_Social_Links extends WP_Widget {
 					if('' != $link_val){
 						echo sprintf('
 							<li class="social-link-item %s %s %s">
-								<a href="%s" %s>%s %s %s</a>
+								<a aria-label="social link" href="%s" %s>%s %s %s</a>
 							</li>
 							<!-- /themify-link-item -->',
 							sanitize_title($title_val),
@@ -687,7 +687,7 @@ class Themify_List_Categories extends WP_Widget {
 			wp_dropdown_categories($args);
 		?>
 		
-			<script type='text/javascript'>
+			<script>
 			/* <![CDATA[ */
 				function onCatChange() {
 					var dropdown = document.getElementById('<?php echo esc_js( $themify_widget_id ); ?>'),
@@ -1325,7 +1325,7 @@ class Themify_Twitter extends WP_Widget {
 			</p>
 		</div>
 		
-		<script type="text/javascript">
+		<script>
 		( function( $ ) {
 			var toggleDisplay = $('.toggle-display');
 			if( toggleDisplay.length ) {
@@ -1390,7 +1390,7 @@ class Themify_Flickr extends WP_Widget {
 		}	
 		
 		echo '<div id="flickr_badge_wrapper" class="clearfix">
-				<script type="text/javascript" src="' . esc_url( themify_https_esc( 'http://www.flickr.com/badge_code_v2.gne' ) . '?count=' . $show_count . '.&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=' . $username ) . '"></script>
+				<script src="' . esc_url( themify_https_esc( 'http://www.flickr.com/badge_code_v2.gne' ) . '?count=' . $show_count . '.&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=' . $username ) . '"></script>
 			</div>';
 		if( $show_link )
 			echo '<a href="' . esc_url( 'http://www.flickr.com/photos/' . $username . '/' ) . '">' , __( 'View my Flickr photostream', 'themify' ) , '</a>';

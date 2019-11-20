@@ -643,7 +643,7 @@ class TB_Feature_Module extends Themify_Builder_Component_Module {
 	    }
         #>
         <div class="module module-<?php echo $this->slug; ?> {{chart_class}} layout-{{ data.layout_feature }} size-{{data.circle_size_feature}} {{ data.css_feature }}">
-            <style type="text/css">
+            <style>
                 {{style}}
             </style> 
             <# if( data.mod_title_feature ) { #>
