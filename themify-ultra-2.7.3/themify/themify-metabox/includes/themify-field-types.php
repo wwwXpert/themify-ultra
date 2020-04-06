@@ -49,7 +49,7 @@ function themify_meta_field_image( $args ) {
 		<span class="themify_field_description"><?php echo wp_kses_post( $meta_box['description'] ); ?></span>
 	<?php endif; // meta_box description ?>
 
-	<script type="text/javascript">
+	<script>
 		jQuery(function($){
 			var $remove = $('#remove-<?php echo esc_js( $meta_box['name'] ); ?>');
 			$remove.find('a').on('click', function(e){
@@ -662,7 +662,7 @@ function themify_meta_field_video( $args ) {
 		<?php themify_uploader($meta_box['name'], $featimg_uploader_args) ?>
 	</div>
 
-	<script type="text/javascript">
+	<script>
 		jQuery(function($){
 			$('#remove-<?php echo esc_js( $meta_box['name'] ); ?>').find('a').on('click', function(e){
 				e.preventDefault();

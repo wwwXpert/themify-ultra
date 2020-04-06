@@ -246,7 +246,7 @@ class Themify_Single_Infinite {
 		$styles = is_a( $wp_styles, 'WP_Styles' ) ? $wp_styles->done : array();
 		$styles = apply_filters( 'themify_single_infinite_existing_stylesheets', $styles );
 
-		?><script type="text/javascript">
+		?><script>
 			jQuery.extend( themifySI.scripts, <?php echo json_encode( $scripts ); ?> );
 			jQuery.extend( themifySI.styles, <?php echo json_encode( $styles ); ?> );
 		</script><?php

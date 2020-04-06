@@ -1521,7 +1521,7 @@ if (!class_exists('Themify_Builder')) :
 		if(!TFCache::is_ajax()){
 		    $output='<link rel="preload" href="'.themify_enque( THEMIFY_BUILDER_URI . '/css/themify-builder-style.css' ).'?ver='.THEMIFY_VERSION.'" as="style" />';
 		}
-		$output.='<script type="text/javascript">
+		$output.='<script>
 				if(document.getElementById( "themify-builder-style" )===null ){
 					var el =  document.getElementById( "builder-styles-css" );
 					if(el!==null){
@@ -2112,7 +2112,7 @@ if (!class_exists('Themify_Builder')) :
         $custom_css = get_post_meta( self::$builder_active_id , 'tbp_custom_css', true );
         if ( !empty($custom_css) ){
             echo PHP_EOL , '<!-- Custom Style -->' , PHP_EOL,
-                '<style type="text/css" id="tb_custom_css_tmp">', PHP_EOL,
+                '<style id="tb_custom_css_tmp">', PHP_EOL,
                 $custom_css , PHP_EOL,
                 '</style>' , PHP_EOL , '<!-- / end custom style -->' ,PHP_EOL;
         }

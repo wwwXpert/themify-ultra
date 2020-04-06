@@ -119,7 +119,7 @@ if (TFCache::start_cache($args['mod_name'], self::$post_id, array('ID' => $args[
 	$container_props=$container_class=null;
 	do_action('themify_builder_background_styling',$builder_id,array('styling'=>$fields_args,'mod_name'=>$mod_name),$element_id,'module');
         $insetColor = $fields_args['icon_bg_feature'] !== '' ? esc_attr(Themify_Builder_Stylesheet::get_rgba_color($fields_args['icon_bg_feature'])) : '';
-        $style = '<style type="text/css">';
+        $style = '<style>';
         if ($fields_args['circle_stroke_feature']) {
             $fields_args['circle_stroke_feature'] = (int) $fields_args['circle_stroke_feature'];
             $circleBackground = $chart_vars['trackColor'];

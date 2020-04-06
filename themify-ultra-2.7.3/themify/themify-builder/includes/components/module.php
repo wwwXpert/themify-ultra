@@ -517,7 +517,7 @@ class Themify_Builder_Component_Module extends Themify_Builder_Component_Base {
 							$ver = isset($assets['ver']) ?  $assets['ver'] : THEMIFY_VERSION;
 							$href = $s.'?ver='.$ver;
 							// addon's stylesheet loads after themify-builder-styles.css, but before theme's stylesheet.
-							echo '<script type="text/javascript">
+							echo '<script>
 									var id ="'.$id.'";
 									if(document.getElementById(id)===null){
 									    var link = document.createElement("link");
