@@ -1810,7 +1810,7 @@ function themify_theme_add_section_loader() {
 			}
 		}
 		?>
-		<style type="text/css">
+		<style>
 			.hidden-view:after{
 				<?php echo $color ? 'background-color:' . $color  : '' ?>
 			}

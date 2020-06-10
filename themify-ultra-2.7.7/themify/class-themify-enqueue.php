@@ -65,7 +65,7 @@ class Themify_Enqueue_Assets {
 	    themify_get_css();
 	    // Custom CSS
 	    if ($custom_css = themify_get('setting-custom_css')) {
-		echo "\n\n<!-- custom css -->\n\n<style type='text/css'>$custom_css</style>";
+		echo "\n\n<!-- custom css -->\n\n<style>$custom_css</style>";
 	    }
 	}
 	/* Adds the global variable in JS that controls the mobile menu breakpoint */
@@ -75,7 +75,7 @@ class Themify_Enqueue_Assets {
 	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
 	<?php endif; ?>
 
-	<script type="text/javascript">
+	<script>
 	    var tf_mobile_menu_trigger_point = <?php echo themify_get('setting-mobile_menu_trigger_point', 1200, true); ?>;
 	</script>
 	<?php
@@ -126,7 +126,7 @@ class Themify_Enqueue_Assets {
 		}
 		$css = $wp_filesystem->get_contents($dir);
 		if(!empty($css)){
-		    echo '<style id="' . $handle . '" type="text/css">', $css, '</style>';
+		    echo '<style id="' . $handle . '">', $css, '</style>';
 		    $tag = '';
 		}
 	    } else {

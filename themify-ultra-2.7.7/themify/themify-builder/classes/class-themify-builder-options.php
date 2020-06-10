@@ -121,7 +121,7 @@ if ( ! class_exists( 'Themify_Builder_Options' ) ) {
                 <div class="tb_alert"></div>
                 <!-- /alerts -->
 
-                <script type="text/javascript">
+                <script>
 					function switch_image_field() {
 						var img_field =jQuery('.img_field').closest('tr'),
 							size = jQuery('.image_global_size_field').closest('tr');
@@ -390,7 +390,7 @@ if ( ! class_exists( 'Themify_Builder_Options' ) ) {
 			$custom_css = isset( $settings['custom_css-custom_css'] ) ? $settings['custom_css-custom_css'] : false;
 			if ( $custom_css ){
 				echo PHP_EOL . '<!-- Builder Custom Style -->' . PHP_EOL,
-					'<style type="text/css">' . PHP_EOL,
+					'<style>' . PHP_EOL,
 					$custom_css . PHP_EOL,
 					'</style>' . PHP_EOL . '<!-- / end builder custom style -->' . PHP_EOL;
 			}
@@ -912,7 +912,7 @@ if ( ! class_exists( 'Themify_Builder_Options' ) ) {
 		 * @access public
 		 */
 		public function custom_admin_css() {
-			echo '<style type="text/css" rel="stylesheet">
+			echo '<style rel="stylesheet">
 			.width8 { width: 300px; }
 			.width4 { width: 80px; }
 			.width10 { width: 68%; }

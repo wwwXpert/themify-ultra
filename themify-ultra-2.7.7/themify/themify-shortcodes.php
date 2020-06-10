@@ -452,7 +452,7 @@ function themify_shortcode_flickr( $atts, $content = null ) {
 	}
 	if($url){
 		$url = esc_url($url);
-		$flickrstr='<!-- shortcode Flickr --><div class="shortcode clearfix flickr"><script type="text/javascript" src="'.$url.'"></script></div> <!-- /shortcode Flickr -->';
+		$flickrstr='<!-- shortcode Flickr --><div class="shortcode clearfix flickr"><script src="'.$url.'"></script></div> <!-- /shortcode Flickr -->';
 	}
 	return $flickrstr;
 }
