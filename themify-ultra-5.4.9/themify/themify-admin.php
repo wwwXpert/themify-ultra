@@ -224,7 +224,7 @@ function themify_docs() {
 	$theme = wp_get_theme();
 	$doc_path = str_replace( 'themify-', '', $theme->get_template() );
 	?>
-	<script type="text/javascript">window.location = "https://themify.me/docs/<?php echo $doc_path; ?>-documentation";</script>
+	<script>window.location = "https://themify.me/docs/<?php echo $doc_path; ?>-documentation";</script>
 	<?php
 }
 
@@ -530,7 +530,7 @@ function themify_page() {
 	<!--/footer -->
 
 	</form>
-        <script type="text/javascript">
+        <script>
 	/**
 	 * Ensure checkboxes are included in the data sent to server
 	 * Fixes checkboxes not being saved

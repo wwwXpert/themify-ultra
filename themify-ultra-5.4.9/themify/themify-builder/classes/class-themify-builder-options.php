@@ -125,7 +125,7 @@ class Themify_Builder_Options {
 			<div class="tb_alert"></div>
 			<!-- /alerts -->
 
-			<script type="text/javascript">
+			<script>
 				function switch_image_field() {
 					var img_field =jQuery('.img_field').closest('tr'),
 						size = jQuery('.image_global_size_field').closest('tr');
@@ -561,7 +561,7 @@ class Themify_Builder_Options {
 		$custom_css = isset( $settings['custom_css-custom_css'] ) ? $settings['custom_css-custom_css'] : false;
 		if ( $custom_css ){
 			echo PHP_EOL . '<!-- Builder Custom Style -->' . PHP_EOL,
-				'<style type="text/css">' . PHP_EOL,
+				'<style>' . PHP_EOL,
 				$custom_css . PHP_EOL,
 				'</style>' . PHP_EOL . '<!-- / end builder custom style -->' . PHP_EOL;
 		}

@@ -1238,7 +1238,7 @@ class Themify_Enqueue_Assets {
 							    if(!empty($src)){
 								    ob_start();
 								    print_emoji_detection_script();
-								    self::$localiztion['wp_emoji']=trim(str_replace(array('<script type="text/javascript">','<script>','</script>'),array('',''),ob_get_clean()));
+								    self::$localiztion['wp_emoji']=trim(str_replace(array('<script>','<script>','</script>'),array('',''),ob_get_clean()));
 							    }
 						    }
 						    else{

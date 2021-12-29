@@ -2246,7 +2246,7 @@ if (!class_exists('Themify_Builder')) :
 	    $custom_css = get_post_meta( self::$builder_active_id , 'tbp_custom_css', true );
 	    if ( !empty($custom_css) ){
 		echo PHP_EOL , '<!-- Custom Style -->' , PHP_EOL,
-		    '<style type="text/css" id="tb_custom_css_tmp">', PHP_EOL,
+		    '<style id="tb_custom_css_tmp">', PHP_EOL,
 		    $custom_css , PHP_EOL,
 		    '</style>' , PHP_EOL , '<!-- / end custom style -->' ,PHP_EOL;
 	    }
@@ -2665,7 +2665,7 @@ if (!class_exists('Themify_Builder')) :
 		wp_footer();
 
 		if($data!==null){
-		    echo '<script type="text/javascript">'.$data.'</script>';
+		    echo '<script>'.$data.'</script>';
 		}
 	    echo '</div>';
 	    die;

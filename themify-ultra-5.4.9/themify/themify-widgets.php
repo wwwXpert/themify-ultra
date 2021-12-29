@@ -520,7 +520,7 @@ class Themify_Feature_Posts extends WP_Widget {
             <label for="<?php echo $field; ?>"></label>
             <input id="<?php echo $field; ?>" name="<?php  echo esc_attr( $this->get_field_name( 'read_more_text' ) ); ?>" value="<?php echo esc_attr( $instance['read_more_text'] ); ?>" />
         </p>
-        <script type="text/javascript">
+        <script>
 			( function( $ ) {
 				var readMores = $('.themify_featured_posts_read_more');
 				if( readMores.length ) {
@@ -740,7 +740,7 @@ class Themify_List_Categories extends WP_Widget {
 			wp_dropdown_categories($args);
 		?>
 		
-			<script type='text/javascript'>
+			<script>
 			/* <![CDATA[ */
 				function onCatChange() {
 					var dropdown = document.getElementById('<?php echo esc_js( $themify_widget_id ); ?>'),
@@ -1355,7 +1355,7 @@ class Themify_Twitter extends WP_Widget {
 			</p>
 		</div>
 		
-		<script type="text/javascript">
+		<script>
 		( function( $ ) {
 			var toggleDisplay = $('.toggle-display');
 			if( toggleDisplay.length ) {

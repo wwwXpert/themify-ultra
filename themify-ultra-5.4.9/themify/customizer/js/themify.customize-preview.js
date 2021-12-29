@@ -1291,7 +1291,7 @@
 								.replace(/[\n]/g, '')
 								.replace(/[\r]/g, '')
 								.replace(/[\t]/g, '')
-						$('head').append('<style type="text/css" id="' + stylesheet + '">' + customcssData + '</style>');
+						$('head').append('<style id="' + stylesheet + '">' + customcssData + '</style>');
 					}
 				});
 			});
